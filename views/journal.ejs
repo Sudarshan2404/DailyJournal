@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/journal.css" />
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="container">
+        <div class="intro">
+          <h2 class="greet"><%= user %></h2>
+          <div class="custom">
+            <button id="open-form">Create Entry +</button>
+            <form action="/journal/filter" method="get">
+              <input
+                type="date"
+                name="date"
+                id="date"
+                value="<%= today %>"
+                min="<%= mindate %>"
+                max="<%= maxdate %>"
+                onchange="this.form.submit()"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="content">
+          <% if(msg){ %>
+          <h2 id="re2"><%= msg %></h2>
+          <% } else {%>
+          <h2 id="re">Recent Entries</h2>
+          <div class="tile-wrapper">
+            <%entry.forEach(entry=> { %>
+            <div class="tiles">
+              <div class="tile-content">
+                <h4><%= entry.title %></h4>
+                <p><%= entry.entry %></p>
+              </div>
+              <div class="buttons">
+                <button type="button" class="delete" data-id="<%= entry.id %>">
+                  Delete
+                </button>
+              </div>
+            </div>
+            <% }); }%>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="create-form">
+      <div class="form-conte">
+        <form action="/journal/create" method="post">
+          <h4>Daily Journal</h4>
+          <input
+            type="text"
+            placeholder="Tittle"
+            name="title"
+            id="sp"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Journal Entry"
+            name="entry"
+            id="entry"
+            required
+          />
+          <div class="but">
+            <button class="btnn" id="create">Create Entry+</button>
+            <input class="btnn" id="cancel" type="button" value="Cancel" />
+          </div>
+        </form>
+      </div>
+      <form id="delete-form" action="/journal/delete" method="post">
+        <input type="hidden" name="id" id="del-id" />
+      </form>
+    </div>
+    <script src="/js/journal.js"></script>
+  </body>
+</html>

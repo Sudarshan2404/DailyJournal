@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #fbeaff,
+    #ead6f2,
+    #d9c2e6,
+    #c6afdb,
+    #b39cd0
+  );
+}

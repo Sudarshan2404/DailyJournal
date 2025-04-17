@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-form">
+        <h1 id="title">Daily Journal</h1>
+        <div class="form-container">
+          <form action="/auth/register" class="login" method="post">
+            <input
+              id="bor"
+              type="text"
+              placeholder="Username"
+              name="username"
+            />
+            <input id="bor" type="email" placeholder="Email" name="email" />
+            <input
+              id="bor"
+              type="password"
+              placeholder="Password"
+              name="password"
+            />
+            <input id="bor" type="text" placeholder="First Name" name="fname" />
+            <input id="bor" type="text" placeholder="Last Name" name="lname" />
+            <span class="message"><%= msg %></span>
+            <input id="submit" type="submit" value="Sign Up" />
+          </form>
+          <p id="register">
+            Already have an account? <a href="/auth/login">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
