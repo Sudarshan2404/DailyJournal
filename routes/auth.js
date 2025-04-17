@@ -14,7 +14,7 @@ router.get("/login", (req, res) => {
 
 router.post("/login", async (req, res, next) => {
   if (req.isAuthenticated()) {
-    return res.redirect("/");
+    return res.redirect("/journal");
   }
   try {
     passport.authenticate("local", (err, user, info) => {
