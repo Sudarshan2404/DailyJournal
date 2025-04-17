@@ -11,6 +11,7 @@ const db = new Client({
   port: process.env.PG_PORT,
   ssl: {
     rejectUnauthorized: false,
+    sslmode: "require",
   },
 });
 
