@@ -12,7 +12,7 @@ import initialize from "./config/passport.js";
 env.config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const saltrounds = 10;
 
 app.use(
@@ -45,6 +45,6 @@ app.get("/", (req, res) => {
   res.redirect("/auth/login");
 });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`Listening on http://localhost:${port}`);
 });
