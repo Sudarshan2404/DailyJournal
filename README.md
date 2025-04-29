@@ -51,16 +51,16 @@ A simple, secure daily journaling web application that allows users to write, vi
    cd daily-journal
    ```
 
-2. **Install Dependencies*
+2. **Install Dependencies**
    ```bash
    npm install
    ```
 
-3. **Start the server*
+3. **Start the server**
    ```bash
    node app.js
    ```
-4.Open your browser and navigate to http://localhost:3000
+4. **Open your browser and navigate to http://localhost:3000**
 
 ## 🧑‍💻 Author
 -Sudarshan Kulkarni
