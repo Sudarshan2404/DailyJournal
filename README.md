@@ -8,7 +8,7 @@ A simple, secure daily journaling web application that allows users to write, vi
 
 ## ✨ Features
 
-- 🖊️ Add, edit, and delete journal entries
+- 🖊️ Add and delete journal entries
 - 🔐 User authentication using Passport.js
 - 📅 Date-based journal organization
 - 🎨 Clean and responsive UI with HTML, CSS, and EJS
@@ -38,7 +38,7 @@ A simple, secure daily journaling web application that allows users to write, vi
 
 ### Prerequisites
 - Node.js and npm
-- MongoDB (local or cloud via MongoDB Atlas)
+- Postgre.sql (reffer to db.sql folder)
 
 ### Installation
 
