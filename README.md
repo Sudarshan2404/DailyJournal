@@ -44,8 +44,7 @@ A simple, secure daily journaling web application that allows users to write, vi
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/daily-journal.git
-   cd daily-journal
+   git clone https://github.com/Sudarshan2404/DailyJournal.git
    ```
    ```bash
    cd daily-journal
@@ -61,8 +60,6 @@ A simple, secure daily journaling web application that allows users to write, vi
    node app.js
    ```
 4.Open your browser and navigate to http://localhost:3000
-
-Hosted on render:- https://dailyjournal-4fmz.onrender.com
 
 ##🧑‍💻 Author
 Sudarshan Kulkarni
