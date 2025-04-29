@@ -34,7 +34,7 @@ A simple, secure daily journaling web application that allows users to write, vi
 
 ---
 
-## 🚀 Getting Started
+## 🛠 Setup Instructions
 
 ### Prerequisites
 - Node.js and npm
