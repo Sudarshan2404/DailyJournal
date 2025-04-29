@@ -39,6 +39,7 @@ A simple, secure daily journaling web application that allows users to write, vi
 ### Prerequisites
 - Node.js and npm
 - Postgre.sql (reffer to db.sql folder)
+- setup the postgresql before starting project installation you will see all the sql queries used to create table in db.sql file
 
 ### Installation
 
