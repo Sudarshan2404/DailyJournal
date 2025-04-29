@@ -30,7 +30,7 @@ A simple, secure daily journaling web application that allows users to write, vi
 - Passport.js (Local Strategy)
 - express-session
 - body-parser
-- mongoose (for MongoDB integration)
+- PostgreSQL
 
 ---
 
