@@ -21,6 +21,9 @@ const db = new Client({
   //   rejectUnauthorized: false,
   //   sslmode: "require",
   // },
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 db.connect()
